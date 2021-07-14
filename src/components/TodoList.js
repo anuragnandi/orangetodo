@@ -9,11 +9,11 @@ function TodoList() {
     <div className="row">
       {todos.map((todo) => {
         return (
-          <Bounce bottom>
-            <div key={todo.id} className="col-md-4 col-6">
+          <div key={todo.id} className="col-md-4 col-6">
+            <Bounce bottom>
               <TodoItem todo={todo} />
-            </div>
-          </Bounce>
+            </Bounce>
+          </div>
         );
       })}
     </div>
